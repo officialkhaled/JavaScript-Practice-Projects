@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ingenious Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>TIP CALCULATOR</h2>
+
+      <div class="label">
+        <label for="bill">Bill Amount ($)</label>
+        <input type="number" id="bill" />
+      </div>
+      <div class="label">
+        <label for="percent">Tip Percentage (%)</label>
+        <input type="number" id="percent" />
+      </div>
+
+      <div class="button">
+        <button id="calc-btn" onclick="calculateTip()">Calculate</button>
+      </div>
+
+      <hr class="break" />
+
+      <div class="result">
+        <p>Tip Amount: <span id="tip-amount">$NaN </span></p>
+        <p>Total Amount: <span id="total-amount">$NaN </span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
